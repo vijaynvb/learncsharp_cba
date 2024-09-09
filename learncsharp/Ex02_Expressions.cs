@@ -28,9 +28,6 @@ namespace learncsharp
 
             Console.WriteLine(@"C:\Dev\Readme.txt"); // \n \r \t \b \0
 
-
-
-
         }
     }
 }
