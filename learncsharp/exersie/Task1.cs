@@ -9,7 +9,7 @@ namespace learncsharp.exersie
     // write a program to accept two number and do addition, subtraction, division, multiplication
     // and print your outputs.
 
-    internal class Task1
+    class Task1
     {
     }
 }
