@@ -26,3 +26,10 @@
       step 3: if sum <= 21 - return sum
       step 4: if sum > 21 and a[0],a[1],a[2] == 11 return sum - 10
       step 5: if sum > 21 return bust
+
+
+
+
+1. Create a Calculator class which performs basic Operations like Add, Sub, Mul, Div, where the these opertations are defined in methods and accepts inputs as parameters accordingly.
+
+2. Create a runner class which can create an object of Calculator Class and runner class will invoke the opertations from calculator class to perform all operations.
