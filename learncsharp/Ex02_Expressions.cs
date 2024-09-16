@@ -8,7 +8,7 @@ namespace learncsharp
 {
     class Ex02_Expressions
     {
-        public static void Main()
+        public  void Main()
         {
             Console.WriteLine("Expressions example");
 
