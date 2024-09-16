@@ -30,6 +30,6 @@
 
 
 
-1. Create a Calculator class which performs basic Operations like Add, Sub, Mul, Div, where the these opertations are defined in methods and accepts inputs as parameters accordingly.
+1. Create a Calculator class which performs basic Operations like Add, Sub, Mul, Div, where these opertations are defined in methods and accepts inputs as parameters accordingly.
 
 2. Create a runner class which can create an object of Calculator Class and runner class will invoke the opertations from calculator class to perform all operations.

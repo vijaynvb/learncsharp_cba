@@ -9,7 +9,7 @@ namespace learncsharp
     internal class Ex05_Switchcase
     {
         
-        public static  void Main()
+        public   void Main()
         {
             int userOption = 0;
             int NoOfEmployees = 0;
