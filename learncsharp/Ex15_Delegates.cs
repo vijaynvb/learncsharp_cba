@@ -20,7 +20,7 @@ namespace learncsharp
         }
 
 
-        public static void Main()
+        public  void Main()
         {
             Ex15_Delegates myobj=new Ex15_Delegates();
             Notifier greetings;
