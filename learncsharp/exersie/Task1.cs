@@ -8,70 +8,57 @@ namespace learncsharp.exersie
 {
     // write a program to accept two number and do addition, subtraction, division, multiplication
     // and print your outputs.
-    delegate int CalculatorDelegate(int a, int b);
-    class Calculator
-    {
-        public int add(int a, int b)
-        {
-            return a + b;
-        }
-        public int sub(int a, int b)
-        {
-            return a - b;
-        }
-        public int div(int a, int b)
-        {
-            return a / b;
-        }
-        public int mul(int a, int b)
-        {
-            return a * b;
 
+    /*    class Calculator
+        {
+            public int add(int a, int b)
+            {
+                return a + b;
+            }
+            public int sub(int a, int b)
+            {
+                return a - b;
+            }
+            public int div(int a, int b)
+            {
+                return a / b;
+            }
+            public int mul(int a, int b)
+            {
+                return a * b;
+
+            }
         }
-    }
+
+    */
     class Task1
     {
-        // Step 1: educate user to provide inputs
-        // step 2: accept two numbers
-        // step 3: do addition
-        // step 4: do sub
-        // step 5: do div
-        // step 6: do mul
-        // step 7: print the output for end user
-
-        public static int defaultOperation(int a,int b)
+        delegate int CalculatorDelegate(int a, int b);
+        public  void Main()
         {
-            Console.WriteLine("Noting to do");
-            return 0;
-        }
-
-        public static void Main()
-        {
-            Calculator calc = new Calculator();
+           // Calculator calc = new Calculator();
             CalculatorDelegate calculator;
             Console.WriteLine("Which opertaion do you want to do?\n1- Add\n2- Sub\n3- Div\n4- Mul\n ENter ur Option:");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    calculator = new CalculatorDelegate(calc.add);
+                    calculator = new CalculatorDelegate((int a ,int b) => { return a + b; });
                     break;
                 case 2:
-                    calculator = new CalculatorDelegate(calc.sub);
+                    calculator = new CalculatorDelegate((int a, int b) => { return a - b; });
                     break;
                 case 3:
-                    calculator = new CalculatorDelegate(calc.div);
+                    calculator = new CalculatorDelegate((int a, int b) => { return a / b; });
                     break;
                 case 4:
-                    calculator = new CalculatorDelegate(calc.mul);
+                    calculator = new CalculatorDelegate((int a, int b) => { return a * b; });
                     break;
                 default:
-                    calculator = new CalculatorDelegate(defaultOperation);
+                    calculator = new CalculatorDelegate((int a, int b)=> { Console.WriteLine("not valid"); return 0; });
                     break;
             }
-
-            if(calculator != null)
-               Console.WriteLine("Calculated value is: "+calculator(5, 6));
+            Console.WriteLine("Calculated value is: " + calculator(5, 6));
         }
     }
 }
